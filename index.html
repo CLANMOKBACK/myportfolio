@@ -1,71 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jeffrey DeOcampo</title>
-    <style>
-        body {
-            font-family: "Times New Roman", Times, serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-            text-align: center;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: auto;
-            padding: 40px 20px;
-        }
-
-        a {
-            color: #1a73e8;
-            text-decoration: none;
-            margin: 0 10px;
-            display: inline-block;
-        }
-
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 ratio */
-            height: 0;
-            overflow: hidden;
-            max-width: 100%;
-            margin: 20px 0;
-        }
-
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jeffrey DeOcampo</title>
+  <style>
+    body {
+      font-family: "Times New Roman", Times, serif;
+      background-color: #f4f4f4;
+      color: #111;
+      text-align: center;
+      padding: 30px;
+      margin: 0;
+    }
+    img.profile {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-top: 20px;
+    }
+    h1 {
+      font-size: 24px;
+      margin: 20px 0 10px;
+    }
+    p {
+      font-size: 16px;
+      margin: 10px auto;
+      max-width: 400px;
+    }
+    .contact {
+      margin-top: 10px;
+      font-size: 16px;
+    }
+    a {
+      color: #1a1a1a;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .button {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 30px;
+    }
+    .button a {
+      background-color: #000;
+      color: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      max-width: 250px;
+      margin: 0 auto;
+      transition: background 0.2s ease-in-out;
+    }
+    .button a:hover {
+      background-color: #333;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Jeffrey DeOcampo</h1>
-        <p>Welcome to my personal portfolio. Connect with me below:</p>
+  <!-- Replace with your actual photo path or hosted image URL -->
+  <img src="profile.jpeg" alt="Jeffrey DeOcampo" class="profile" />
 
-        <p>
-            <a href="https://www.linkedin.com/in/jeffrey-deocampo-84b574346/" target="_blank">LinkedIn</a>
-            <a href="https://github.com/CLANMOKBACK" target="_blank">GitHub</a>
-            <a href="https://www.instagram.com/takejback/" target="_blank">Instagram</a>
-        </p>
+  <h1>Jeffrey DeOcampo</h1>
+  <p>
+    Graduated from San Diego State University in May 2025.
+    Feel free to contact me through phone or email.
+  </p>
 
-        <p><strong>Email:</strong> <a href="mailto:youremail@example.com">jjdeocampo20@gmail.com</a></p>
-        <p><strong>Phone:</strong> (206) 475-8683</p>
+  <div class="contact">
+    <p><strong>Phone:</strong> (123) 456-7890</p>
+    <p><strong>Email:</strong> <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+  </div>
 
-        <h2>Project Demo</h2>
-        <p>Watch a video walkthrough of one of my projects:</p>
-
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" allowfullscreen></iframe>
-        </div>
-    </div>
+  <div class="button">
+    <a href="https://www.linkedin.com/in/jeffrey-deocampo-84b574346/" target="_blank">LinkedIn</a>
+    <a href="https://github.com/CLANMOKBACK" target="_blank">GitHub</a>
+    <a href="https://www.instagram.com/takejback/" target="_blank">My Resume</a>
+  </div>
 </body>
 </html>
